@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login - Smart College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-card">
+        <h1>Smart College</h1>
+        <p class="subtitle">Management System</p>
+        <form id="loginForm">
+            <label>Username</label>
+            <input id="username" required placeholder="Enter username">
+            <label>Password</label>
+            <input id="password" type="password" required placeholder="Enter password">
+            <button class="primary" type="submit">Login</button>
+            <div class="login-actions">
+                <button type="button" class="link-btn" onclick="resetLogin()">Reset</button>
+                <button type="button" class="link-btn" onclick="cancelLogin()">Cancel</button>
+            </div>
+            <p id="message"></p>
+        </form>
+        <p class="register-text">New student? <a href="register.html">Create an account</a></p>
+        <small>Demo admin: admin / 1234</small>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

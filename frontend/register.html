@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Registration - Smart College</title><link rel="stylesheet" href="style.css"></head>
+<body class="login-page">
+<div class="login-card register-card"><h1>Registration</h1><p class="subtitle">Create your student account</p>
+<form id="registerForm">
+<div class="two-col"><div><label>Full Name</label><input id="fullName" required></div><div><label>Phone</label><input id="phone" required></div></div>
+<label>Email</label><input id="email" type="email" required>
+<div class="two-col"><div><label>Username</label><input id="username" required></div><div><label>Password</label><input id="password" type="password" required minlength="6"></div></div>
+<div class="two-col"><div><label>Course</label><select id="course" required><option value="">Select course</option><option>B.Sc. AI & ML</option><option>B.Sc. Computer Science</option><option>BCA</option><option>BBA</option></select></div><div><label>Year</label><select id="year" required><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option></select></div></div>
+<button class="primary" type="submit">Register</button><p id="regMessage"></p>
+</form><p class="register-text">Already registered? <a href="index.html">Back to Login</a></p>
+</div><script src="script.js"></script></body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard</title><link rel="stylesheet" href="style.css"></head><body><div class="app">
+<aside class="sidebar"><h2>Smart College</h2><nav><a class="active" href="dashboard.html">Dashboard</a><a class="" href="students.html">Students</a><a class="" href="attendance.html">Attendance</a><a class="" href="courses.html">Courses</a><a class="" href="notices.html">Notices</a><a class="" href="profile.html">Profile</a></nav><button class="logout" onclick="logout()">Logout</button></aside>
+<main class="main"><header class="topbar"><div><h1>Dashboard</h1><p>Smart College Management System</p></div><span class="user-badge" id="userBadge">User</span></header><section class="cards">
+<div class="stat-card"><span>Total Students</span><strong id="studentCount">0</strong></div>
+<div class="stat-card"><span>Courses</span><strong id="courseCount">0</strong></div>
+<div class="stat-card"><span>Notices</span><strong id="noticeCount">0</strong></div>
+<div class="stat-card"><span>Attendance</span><strong id="attendancePercent">0%</strong></div></section>
+<section class="panel"><h2>Welcome to Smart College</h2><p>Manage student records, attendance, courses and college notices. All changes are stored in MySQL through the backend API.</p></section>
+<section class="student-table">
+<table id="dashboardStudentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Semester</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+</section></main>
+</div><script src="script.js"></script></body></html>

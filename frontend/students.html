@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Student Management</title><link rel="stylesheet" href="style.css"></head><body><div class="app">
+<aside class="sidebar"><h2>Smart College</h2><nav><a class="" href="dashboard.html">Dashboard</a><a class="active" href="students.html">Students</a><a class="" href="attendance.html">Attendance</a><a class="" href="courses.html">Courses</a><a class="" href="notices.html">Notices</a><a class="" href="profile.html">Profile</a></nav><button class="logout" onclick="logout()">Logout</button></aside>
+<main class="main"><header class="topbar"><div><h1>Student Management</h1><p>Smart College Management System</p></div><span class="user-badge" id="userBadge">User</span></header><section class="panel"><form id="studentForm" class="grid-form">
+<input id="sname" placeholder="Student name" required><input id="roll" placeholder="Roll number" required><input id="course" placeholder="Course" required><input id="year" placeholder="Year" required><input id="sem" placeholder="Semester" required><button class="primary" type="submit">Add Student</button>
+</form><p id="studentMessage"></p></section>
+<section class="panel"><div class="table-wrap"><table><thead><tr><th>Name</th><th>Roll</th><th>Course</th><th>Year</th><th>Semester</th><th>Action</th></tr></thead><tbody id="studentTable"></tbody></table></div></section></main>
+</div><script src="script.js"></script></body></html>
